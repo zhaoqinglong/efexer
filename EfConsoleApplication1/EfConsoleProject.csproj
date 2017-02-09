@@ -97,6 +97,7 @@
     <Compile Include="BLL\TeaBll.cs" />
     <Compile Include="Test\AbstractDo.cs" />
     <Compile Include="Test\AbstractTest.cs" />
+    <Compile Include="Test\AsyncTest.cs" />
     <Compile Include="Test\DITest.cs" />
     <Compile Include="Test\IGetTest.cs" />
     <Compile Include="Test\Log.cs" />

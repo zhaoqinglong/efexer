@@ -5,6 +5,7 @@ using System.Data.Entity.Core.Objects;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Castle.MicroKernel.Registration;
 using Castle.Windsor;
@@ -106,9 +107,12 @@ namespace EfConsoleApplication1
             #region Castle Windsor DI
 
             Console.WriteLine("Castle Windsor DI:");
-            var castleContainer=new WindsorContainer();
+            var castleContainer = new WindsorContainer();
             //castleContainer.Installer();
-            castleContainer.Register(Castle.MicroKernel.Registration.Component.For<IGetTest>().ImplementedBy<OtherDiTest>().LifestyleTransient());
+            castleContainer.Register(
+                Castle.MicroKernel.Registration.Component.For<IGetTest>()
+                    .ImplementedBy<OtherDiTest>()
+                    .LifestyleTransient());
             var cas = castleContainer.Resolve<IGetTest>();
             cas.GetNothing();
 
@@ -120,8 +124,27 @@ namespace EfConsoleApplication1
             castleEntrance.CastleDiTest();
 
 
-           
+
             #endregion
+
+            #region Async测试
+
+
+            //var id1 = AsyncTest.CountCharacters(1, "http://www.cnblogs.com/");
+            //var id2 = AsyncTest.CountCharactersAsync(2, "http://www.cnblogs.com/").Result;
+
+            var addRes1 = AsyncTest.AddAsync(2, 3);
+
+            Task addRes2 = AsyncTest.AddAsyncTask(1, 2);
+            addRes2.Wait();
+            var status = addRes2.Status;
+
+            AsyncTest.AddAsyncVoidTask(3, 3);
+            var guidTask = AsyncTest.GetGuidAsync();
+
+            #endregion
+
+            Console.WriteLine("this is end!");
 
             Console.ReadLine();
 
