@@ -1,11 +1,12 @@
-﻿using System;
+﻿using EfConsole.Core.School;
+using EfConsole.EntityFramework.Repository;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EfConsoleApplication1.Core;
-using EfConsoleApplication1.DataStore;
+
 
 namespace EfConsoleApplication1.BLL
 {

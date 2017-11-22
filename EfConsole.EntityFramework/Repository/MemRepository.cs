@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EfConsole.Core;
 
-namespace EfConsoleApplication1.DataStore
+namespace EfConsole.EntityFramework.Repository
 {
     public class MemRepository<T,TKey> : EfRepositoryBase<T,TKey> where T: BaseEntity <TKey>
     {

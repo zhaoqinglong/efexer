@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using Castle.MicroKernel.Registration;
 using Castle.Windsor;
 using EfConsoleApplication1.BLL;
-using EfConsoleApplication1.Core;
 using EfConsoleApplication1.DI;
 using EfConsoleApplication1.Test;
 

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EfConsoleApplication1.Core;
-using EfConsoleApplication1.DataStore;
 using EfConsoleApplication1.DI;
+using EfConsole.EntityFramework.Repository;
+using EfConsole.Core.School;
 
 namespace EfConsoleApplication1.BLL
 {

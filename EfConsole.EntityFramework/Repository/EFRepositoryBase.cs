@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+using EfConsole.Core;
 
-namespace EfConsoleApplication1.DataStore
+namespace EfConsole.EntityFramework.Repository
 {
     public abstract class EfRepositoryBase<T, TKey> : IRepository<T, TKey> where T : BaseEntity<TKey>
     {

@@ -1,16 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EfConsoleApplication1.Core;
 
-namespace EfConsoleApplication1.DataStore
+namespace EfConsole.EntityFramework.Repository
 {
     /// <summary>
     /// 工作单元
     /// </summary>
-    public  class EfUnitOfWork : Context, IUnitOfWork
+    public  class EfUnitOfWork : EfConsoleContext, IUnitOfWork
     {
         /// <summary>
         /// 初始化Entity Framework工作单元
