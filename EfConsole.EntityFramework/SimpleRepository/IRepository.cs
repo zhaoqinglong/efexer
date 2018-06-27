@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using EfConsole.Core.Entities;
+using EfConsole.EntityFramework.Repository;
 
-namespace EfConsole.EntityFramework.Repository
+namespace EfConsole.EntityFramework.SimpleRepository
 {
   
-    public interface IRepository<TEntity, in TKey> where TEntity : EfConsole.Core.BaseEntity<TKey>
+    public interface IRepository<TEntity, in TKey> where TEntity : BaseEntity<TKey>
     {
         //DbSet<TEntity> Entities { get; }
 

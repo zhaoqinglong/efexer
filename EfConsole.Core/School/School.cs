@@ -6,16 +6,18 @@ using EfConsole.Core.Entities;
 
 namespace EfConsole.Core.School
 {
-    public class Teacher : BaseEntity<int>
+    public class School:Entity
     {
+        /// <summary>
+        /// 名称
+        /// </summary>
         public string Name { set; get; }
 
-        public int Age { set; get; }
-
         /// <summary>
-        /// 教授班级
+        /// 地址
         /// </summary>
-        public string TeachClass { set; get; }
+        public string Address { set; get; }
+
 
     }
 }

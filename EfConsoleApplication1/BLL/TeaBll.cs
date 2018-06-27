@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using EfConsole.EntityFramework.Repository;
 using EfConsole.Core.School;
+using EfConsole.EntityFramework.SimpleRepository;
 
 namespace EfConsoleApplication1.BLL
 {

@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
-namespace EfConsole.Core
+namespace EfConsole.Core.Entities
 {
     /// <summary>
     /// 基类
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class BaseEntity<T>
+    public  class BaseEntity<T>
     {
         protected BaseEntity()
         {

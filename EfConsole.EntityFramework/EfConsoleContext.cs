@@ -32,5 +32,8 @@ namespace EfConsole.EntityFramework
 
         public IDbSet<Grade> Grades { set; get; }
 
+        public IDbSet<School> Schools { set; get; }
+
+
     }
 }

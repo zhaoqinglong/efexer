@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\GrandeBll.cs" />
+    <Compile Include="BLL\SchoolManager.cs" />
     <Compile Include="BLL\StudentBLL.cs" />
     <Compile Include="DI\Container.cs" />
     <Compile Include="Core\Extend.cs" />

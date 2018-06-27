@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EfConsole.EntityFramework.Repository
+namespace EfConsole.EntityFramework.SimpleRepository
 {
     public interface IUnitOfWork : IDisposable
     {

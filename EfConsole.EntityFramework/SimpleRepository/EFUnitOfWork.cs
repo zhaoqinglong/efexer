@@ -1,6 +1,7 @@
 ﻿using System;
+using EfConsole.EntityFramework.Repository;
 
-namespace EfConsole.EntityFramework.Repository
+namespace EfConsole.EntityFramework.SimpleRepository
 {
     /// <summary>
     /// 工作单元

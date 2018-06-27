@@ -47,13 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbContextProvider.cs" />
     <Compile Include="EfConsoleContext.cs" />
+    <Compile Include="IDbContextProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\EFRepositoryBase.cs" />
-    <Compile Include="Repository\EFUnitOfWork.cs" />
-    <Compile Include="Repository\IRepository.cs" />
-    <Compile Include="Repository\IUnitOfWork.cs" />
-    <Compile Include="Repository\MemRepository.cs" />
+    <Compile Include="SimpleRepository\EFRepositoryBase.cs" />
+    <Compile Include="Repository\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs" />
+    <Compile Include="SimpleRepository\EFUnitOfWork.cs" />
+    <Compile Include="SimpleRepository\IRepository.cs" />
+    <Compile Include="Repository\IRepositoryWithDbContext.cs" />
+    <Compile Include="SimpleRepository\IUnitOfWork.cs" />
+    <Compile Include="SimpleRepository\MemRepository.cs" />
+    <Compile Include="Repository\ZRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -65,5 +70,6 @@
       <Name>EfConsole.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

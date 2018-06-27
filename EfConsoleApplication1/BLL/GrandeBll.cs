@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using EfConsoleApplication1.DI;
 using EfConsole.EntityFramework.Repository;
 using EfConsole.Core.School;
+using EfConsole.EntityFramework.SimpleRepository;
 
 namespace EfConsoleApplication1.BLL
 {
@@ -15,6 +16,7 @@ namespace EfConsoleApplication1.BLL
         /// 班级仓储
         /// </summary>
         private readonly IRepository<Grade, Guid> _gradeRepository;
+      
 
         public GrandeBll()
         {
